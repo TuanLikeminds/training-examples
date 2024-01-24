@@ -4,7 +4,6 @@ variable "student_count" {
 
 resource "aws_iam_user" "iam_users" {
   count = var.student_count
-
   name = "likeminds-pingdevops-student-${count.index + 1}"
 }
 
