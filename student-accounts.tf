@@ -7,3 +7,4 @@ resource "aws_iam_user" "iam_users" {
 
   name = "likeminds-pingdevops-student-${count.index + 1}"
 }
+
